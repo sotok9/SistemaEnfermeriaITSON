@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <link href="../jquery1.4/jquery.mobile-1.4.5.css" rel="stylesheet" type="text/css"/>
+        
+     
+        
+        <link href="../jquery1.4/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
+        
+       
+        <script src="../jquery1.4/demos/js/jquery.js" type="text/javascript"></script>
+        
+
+        <script src="../jquery1.4/demos/js/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+        <style> 
+            .ui-input-text{width:20% }
+            .ui-btn{ width:20%}
+           .tabla{padding: 2%; align:center;}
+           .padre{  padding-left: 30%; }
+           .btng{padding-left: 30%;}
+        </style>
+    </head>
+    <body>
+        
+       
+        
+    <div class="padre">  
+         <h2> Nuevo Lote De Medicamentos </h2>
+            <form id="formulario"> 
+               
+                <label> Fecha</label>
+                <div><input type="date"  class=" Fecha ui-input-text"  required> </div>
+                
+                
+                <label> numero de lote </label>
+                <input type="number" min="1"  required>
+                    
+                
+             
+               
+                
+                <label for="text-basic">Codigo:</label>
+                <input type="text" name="text-basic" id="text-basic" value="" required>
+                
+                <label> Cantidad </label>
+                <input type="number" min="1" required>
+                
+                <label> Fecha de Caducidad</label>
+                <div><input type="date" > </div>
+                
+            <input type="button" value="agregar">
+            
+            </form>
+           </div>
+     
+        
+        <div class="tabla">
+            
+           <table data-role="table"   class="ui-responsive">
+     <thead>
+       <tr>
+         <th >Cantidad</th>
+         <th>Nombre</th>
+         <th >Presentacion</th>
+         <th >cantidad por unidad</th>
+         <th >Caducidad</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <th>1</th>
+         <td>Paracetamol</td>
+         <td>Tabletas</td>
+         <td>15 pz</td>
+         <td>10/12/20</td>
+       </tr>
+       <tr>
+         <th>2</th>
+         <td>Ketorolaco</td>
+         <td>Tabletas</td>
+         <td>24 pz</td>
+         <td>10/12/18</td>
+       </tr>
+      
+     </tbody>
+   </table>
+        </div>
+       <div class="btng"> <input type="submit" form="formulario" value="Guardar"ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check> </div>
+    </body>
+</html>
