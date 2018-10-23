@@ -1,0 +1,121 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="jquery1.4/jquery.mobile-1.4.5.css" />
+
+        <script src="jquery1.4/jquery-1.11.1.min.js"></script>
+        <script src="jquery1.4/jquery.mobile-1.4.5.min.js"></script>
+        <script src="jquery1.4/demos/js/jquery.js"></script>
+        <script src="jquery1.4/demos/js/jquery.mobile-1.4.5.min.js"></script>
+        <style>
+            .Padre{
+                padding-left: 30%;                
+            }
+            .Nombre{
+                width: 30%;
+            }
+            .Apellido{
+                width: 30%;                
+            }
+            .Telefono{
+                width: 18%;
+            }            
+            .FechaNac{
+                width: 19%;                
+            }            
+            .Email{
+                width: 21%;                
+            }
+            .Clinica{
+                width: 30%;                
+            }            
+            .Telefono2{
+                width: 15%;
+                padding: 1%;                 
+            }
+            .Boton{
+                padding: 3%;                
+            }
+            #bloque0{
+                width: 30%;
+            }
+
+            #bloque1, #bloque2,#bloque3{
+                width: 100%;
+            }
+
+            #bloque1 .Nombre, #bloque1 .Apellido,#bloque2 .Telefono, #bloque2 .FechaNac,#bloque2 .Email,#bloque3 .Clinica, #bloque3 .Telefono2, #bloque3 .Boton{
+                display: inline-block;
+            }
+        </style>
+    </head>
+
+    <body>        
+        <div class="Padre">
+            <h2>Nuevo Personal</h2>
+            <form>
+                <div  id="bloque0">
+                <label for="text-5">ID/RFC</label>
+                <input type="text" data-clear-btn="true" name="text-5" id="text-1" value="">
+                </div>
+                <div id="bloque1">
+                    <div class="Nombre">
+                        <label for="text-1">Nombre:</label>
+                        <input type="text" data-clear-btn="true" name="text-1" id="text-1" value="">
+                    </div>
+                    <div class="Apellido">
+                        <label for="text-2">Apellido</label>
+                        <input type="text" data-clear-btn="true" name="text-2" id="text-2" value="">      
+                    </div>
+                    <div style="width: 60%;">
+                        <label for="text-3">Dirección</label>
+                        <input type="text" data-clear-btn="true" name="text-3" id="text-3" value="">
+                    </div>
+                </div>
+
+                <div id="bloque2">
+                    <div class="Email">
+                        <label for="text-4">Email:</label>
+                        <input type="text" data-clear-btn="true" name="text-4" id="text-4" value="">
+                    </div>  
+                    <div class="Telefono">
+                        <label for="text-1">Télefono:</label>
+                        <input type="tel" data-clear-btn="true" name="tel-1" id="tel-1" value="">
+                    </div>                    
+                    <div class="FechaNac">
+                        <label for="date-1">Fecha Nacimiento:</label>
+                        <input type="date" data-clear-btn="true" name="date-1" id="date-1" value="">
+                    </div>                  
+                </div>
+                
+                <div class="ui-field-contain" style="width: 30%">
+                    <label for="select-native-2">Género:</label>
+                    <select name="select-native-2" id="select-native-2" data-mini="true">
+                        <option value="1">Femenino</option>
+                        <option value="2">Masculino</option>
+                    </select>
+                </div>
+                
+                <h3>Lugar de Proveniencia</h3>
+                <div id="bloque3">
+                    <div class="Clinica">
+                        <label for="text-4">Clínica/Hospital</label>
+                        <input type="text" data-clear-btn="true" name="text-4" id="text-1" value="">
+                    </div>
+                    <div class="Telefono2">
+                        <label for="text-2">Télefono:</label>
+                        <input type="tel" data-clear-btn="true" name="tel-2" id="tel-1" value="">
+                    </div>
+                    <div class="Boton">
+                    <button style="background:#2874A6;" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">Guardar</button>
+                    </div>
+                </div>
+                
+                <p>No se si lo ibamos a meter a un frame!!!</p>
+            </form>
+        </div>
+    </body>
+
+</html>

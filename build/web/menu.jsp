@@ -79,7 +79,7 @@
                     <li data-role="list-divider">Registro</li>
                     <li data-icon="plus" class="ui-shadow-icon ui-btn ui-shadow ui-corner-all ui-btn-b"><a href="./Modulo_Medicamentos/medicamentos.html" onclick="fadeOut(500)" target="Marco">Medicamentos</a></li> 
                     <li data-icon="bars" class="ui-shadow-icon ui-btn ui-shadow ui-corner-all ui-btn-b"><a>Lotes</a></li>
-                    <li data-icon="user" class="ui-shadow-icon ui-btn ui-shadow ui-corner-all ui-btn-b"><a>Personal</a></li> 
+                    <li data-icon="user" class="ui-shadow-icon ui-btn ui-shadow ui-corner-all ui-btn-b"><a href="./Modulo_Personal/personal.html" onclick="fadeOut(500)" target="Marco">Personal</a></li> 
                      
                     <li data-role="list-divider">Reportes</li>
                     <li data-icon="heart" class="ui-shadow-icon ui-btn ui-shadow ui-corner-all ui-btn-b"><a>Consultas Medicas</a></li>
