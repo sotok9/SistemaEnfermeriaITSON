@@ -1,0 +1,129 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../jquery1.4/jquery.mobile-1.4.5.css" />
+
+        <script src="../jquery1.4/jquery-1.11.1.min.js"></script>
+        <script src="../jquery1.4/jquery.mobile-1.4.5.min.js"></script>
+        <script src="../jquery1.4/demos/js/jquery.js"></script>
+        <script src="../jquery1.4/demos/js/jquery.mobile-1.4.5.min.js"></script>
+        <style>
+            .Padre{
+                padding-left: 15%;
+                padding-right: 15%
+            }
+            .NombreC{
+                width: 49%;
+            }
+            .NombreG{
+                width: 49%;
+                padding-left: 1%;
+            }  
+
+            .Cantidad{
+                width: 23%;              
+            }
+            .check{
+                width: 25%;
+                padding: 2%;                 
+            }
+
+            .Nombreformula{
+                width: 60%;                
+            }    
+            .Concentracion{
+                width: 37%;
+                padding: 1%; 
+            }  
+
+            .Boton{
+                padding: 3%;                
+            }
+            #bloque0{
+                width: 30%;
+            }
+
+            #bloque1, #bloque2,#bloque3{
+                width: 100%;
+                border-color: black;
+
+            }
+
+            #bloque1 .NombreC, #bloque1 .NombreG,#bloque2 .Cantidad, #bloque2 .check, #bloque3 .Nombreformula, #bloque3 .Concentracion,#bloque4 .Boton{
+                display: inline-block;
+            }
+        </style>
+    </head>
+
+    <body>        
+        <div class="Padre">
+            <h2 style="align-content: center">Nuevo Medicamento</h2>
+            <form>
+                <div  id="bloque0" >
+                    <label for="text-5">Codigo de Barras</label>
+                    <input type="text" data-clear-btn="true" name="text-5" id="text-1" value="">
+                    <br>
+                </div>
+
+                <div class="ui-body ui-body-a ui-corner-all">
+                    <div id="bloque1">
+                        <div class="NombreC">
+                            <label for="text-1">Nombre Comercial</label>
+                            <input type="text" data-clear-btn="true" name="text-1" id="text-1" value="">
+                        </div>
+                        <div class="NombreG">
+                            <label for="text-2">Nombre Generico</label>
+                            <input type="text" data-clear-btn="true" name="text-2" id="text-2" value="">      
+                        </div>
+                    </div>
+
+                    <div id="bloque2" >  
+                        <div class="ui-field-contain" style="width: 49%">  
+                            <label for="select-native-2">Presentacion</label>
+                            <select name="select-native-2" id="select-native-2" data-mini="true" >
+                                <option value="0">Seleccionar...</option>
+                                <option value="1">Tableta</option>
+                                <option value="2">Capsula</option>
+                                <option value="2">Jarabe</option>
+                            </select>
+                        </div>
+                        <div class="Cantidad">
+                            <label for="text-2">Cantidad</label>
+                            <input type="text" data-clear-btn="true" name="text-2" id="text-2" value="">      
+                        </div>
+                        <div class="check">  
+                            <fieldset data-role="controlgroup" data-type="horizontal">
+                                <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2a" value="on" checked="checked">
+                                <label for="radio-choice-h-2a">Simple</label>
+                                <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2b" value="off">
+                                <label for="radio-choice-h-2b">Compuesto</label>
+                            </fieldset>
+                        </div>      
+                    </div>
+                </div>
+                <br>
+
+                <div class="ui-body ui-body-a ui-corner-all">
+                    <div id="bloque3">
+                        <label for="select-native-2">Formula</label>
+                        <div class="Nombreformula">
+                            <label for="text-4">Nombre</label>
+                            <input type="text" data-clear-btn="true" name="text-4" id="text-4" value="">
+                        </div>  
+                        <div class="Concentracion">
+                            <label for="text-1">Concentracion</label>
+                            <input type="tel" data-clear-btn="true" name="tel-1" id="tel-1" value="">
+                        </div>   
+                    </div> 
+                </div>
+
+                <div class="Boton" >
+                    <button style="background:#2874A6;" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </body>
+
+</html>
